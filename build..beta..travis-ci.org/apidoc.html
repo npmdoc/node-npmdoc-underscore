@@ -1,0 +1,3985 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api-documentation for
+    <a
+        
+        href="http://underscorejs.org"
+        
+    >underscore (v1.8.3)</a>
+</h1>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+    
+    <li class="apidocModuleLi"><a href="#apidoc.module.underscore">module underscore</a><ol>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore._">
+            function <span class="apidocSignatureSpan">underscore.</span>_
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.after">
+            function <span class="apidocSignatureSpan">underscore.</span>after
+            <span class="apidocSignatureSpan">(times, func)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.all">
+            function <span class="apidocSignatureSpan">underscore.</span>all
+            <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.allKeys">
+            function <span class="apidocSignatureSpan">underscore.</span>allKeys
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.any">
+            function <span class="apidocSignatureSpan">underscore.</span>any
+            <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.assign">
+            function <span class="apidocSignatureSpan">underscore.</span>assign
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.before">
+            function <span class="apidocSignatureSpan">underscore.</span>before
+            <span class="apidocSignatureSpan">(times, func)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.bind">
+            function <span class="apidocSignatureSpan">underscore.</span>bind
+            <span class="apidocSignatureSpan">(func, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.bindAll">
+            function <span class="apidocSignatureSpan">underscore.</span>bindAll
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.chain">
+            function <span class="apidocSignatureSpan">underscore.</span>chain
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.clone">
+            function <span class="apidocSignatureSpan">underscore.</span>clone
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.collect">
+            function <span class="apidocSignatureSpan">underscore.</span>collect
+            <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.compact">
+            function <span class="apidocSignatureSpan">underscore.</span>compact
+            <span class="apidocSignatureSpan">(array)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.compose">
+            function <span class="apidocSignatureSpan">underscore.</span>compose
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.constant">
+            function <span class="apidocSignatureSpan">underscore.</span>constant
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.contains">
+            function <span class="apidocSignatureSpan">underscore.</span>contains
+            <span class="apidocSignatureSpan">(obj, item, fromIndex, guard)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.countBy">
+            function <span class="apidocSignatureSpan">underscore.</span>countBy
+            <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.create">
+            function <span class="apidocSignatureSpan">underscore.</span>create
+            <span class="apidocSignatureSpan">(prototype, props)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.debounce">
+            function <span class="apidocSignatureSpan">underscore.</span>debounce
+            <span class="apidocSignatureSpan">(func, wait, immediate)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.defaults">
+            function <span class="apidocSignatureSpan">underscore.</span>defaults
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.defer">
+            function <span class="apidocSignatureSpan">underscore.</span>defer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.delay">
+            function <span class="apidocSignatureSpan">underscore.</span>delay
+            <span class="apidocSignatureSpan">(func, wait)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.detect">
+            function <span class="apidocSignatureSpan">underscore.</span>detect
+            <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.difference">
+            function <span class="apidocSignatureSpan">underscore.</span>difference
+            <span class="apidocSignatureSpan">(array)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.drop">
+            function <span class="apidocSignatureSpan">underscore.</span>drop
+            <span class="apidocSignatureSpan">(array, n, guard)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.each">
+            function <span class="apidocSignatureSpan">underscore.</span>each
+            <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.escape">
+            function <span class="apidocSignatureSpan">underscore.</span>escape
+            <span class="apidocSignatureSpan">(string)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.every">
+            function <span class="apidocSignatureSpan">underscore.</span>every
+            <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.extend">
+            function <span class="apidocSignatureSpan">underscore.</span>extend
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.extendOwn">
+            function <span class="apidocSignatureSpan">underscore.</span>extendOwn
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.filter">
+            function <span class="apidocSignatureSpan">underscore.</span>filter
+            <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.find">
+            function <span class="apidocSignatureSpan">underscore.</span>find
+            <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.findIndex">
+            function <span class="apidocSignatureSpan">underscore.</span>findIndex
+            <span class="apidocSignatureSpan">(array, predicate, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.findKey">
+            function <span class="apidocSignatureSpan">underscore.</span>findKey
+            <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.findLastIndex">
+            function <span class="apidocSignatureSpan">underscore.</span>findLastIndex
+            <span class="apidocSignatureSpan">(array, predicate, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.findWhere">
+            function <span class="apidocSignatureSpan">underscore.</span>findWhere
+            <span class="apidocSignatureSpan">(obj, attrs)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.first">
+            function <span class="apidocSignatureSpan">underscore.</span>first
+            <span class="apidocSignatureSpan">(array, n, guard)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.flatten">
+            function <span class="apidocSignatureSpan">underscore.</span>flatten
+            <span class="apidocSignatureSpan">(array, shallow)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.foldl">
+            function <span class="apidocSignatureSpan">underscore.</span>foldl
+            <span class="apidocSignatureSpan">(obj, iteratee, memo, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.foldr">
+            function <span class="apidocSignatureSpan">underscore.</span>foldr
+            <span class="apidocSignatureSpan">(obj, iteratee, memo, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.forEach">
+            function <span class="apidocSignatureSpan">underscore.</span>forEach
+            <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.functions">
+            function <span class="apidocSignatureSpan">underscore.</span>functions
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.groupBy">
+            function <span class="apidocSignatureSpan">underscore.</span>groupBy
+            <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.has">
+            function <span class="apidocSignatureSpan">underscore.</span>has
+            <span class="apidocSignatureSpan">(obj, key)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.head">
+            function <span class="apidocSignatureSpan">underscore.</span>head
+            <span class="apidocSignatureSpan">(array, n, guard)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.identity">
+            function <span class="apidocSignatureSpan">underscore.</span>identity
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.include">
+            function <span class="apidocSignatureSpan">underscore.</span>include
+            <span class="apidocSignatureSpan">(obj, item, fromIndex, guard)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.includes">
+            function <span class="apidocSignatureSpan">underscore.</span>includes
+            <span class="apidocSignatureSpan">(obj, item, fromIndex, guard)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.indexBy">
+            function <span class="apidocSignatureSpan">underscore.</span>indexBy
+            <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.indexOf">
+            function <span class="apidocSignatureSpan">underscore.</span>indexOf
+            <span class="apidocSignatureSpan">(array, item, idx)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.initial">
+            function <span class="apidocSignatureSpan">underscore.</span>initial
+            <span class="apidocSignatureSpan">(array, n, guard)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.inject">
+            function <span class="apidocSignatureSpan">underscore.</span>inject
+            <span class="apidocSignatureSpan">(obj, iteratee, memo, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.intersection">
+            function <span class="apidocSignatureSpan">underscore.</span>intersection
+            <span class="apidocSignatureSpan">(array)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.invert">
+            function <span class="apidocSignatureSpan">underscore.</span>invert
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.invoke">
+            function <span class="apidocSignatureSpan">underscore.</span>invoke
+            <span class="apidocSignatureSpan">(obj, method)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.isArguments">
+            function <span class="apidocSignatureSpan">underscore.</span>isArguments
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.isArray">
+            function <span class="apidocSignatureSpan">underscore.</span>isArray
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.isBoolean">
+            function <span class="apidocSignatureSpan">underscore.</span>isBoolean
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.isDate">
+            function <span class="apidocSignatureSpan">underscore.</span>isDate
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.isElement">
+            function <span class="apidocSignatureSpan">underscore.</span>isElement
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.isEmpty">
+            function <span class="apidocSignatureSpan">underscore.</span>isEmpty
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.isEqual">
+            function <span class="apidocSignatureSpan">underscore.</span>isEqual
+            <span class="apidocSignatureSpan">(a, b)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.isError">
+            function <span class="apidocSignatureSpan">underscore.</span>isError
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.isFinite">
+            function <span class="apidocSignatureSpan">underscore.</span>isFinite
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.isFunction">
+            function <span class="apidocSignatureSpan">underscore.</span>isFunction
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.isMatch">
+            function <span class="apidocSignatureSpan">underscore.</span>isMatch
+            <span class="apidocSignatureSpan">(object, attrs)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.isNaN">
+            function <span class="apidocSignatureSpan">underscore.</span>isNaN
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.isNull">
+            function <span class="apidocSignatureSpan">underscore.</span>isNull
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.isNumber">
+            function <span class="apidocSignatureSpan">underscore.</span>isNumber
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.isObject">
+            function <span class="apidocSignatureSpan">underscore.</span>isObject
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.isRegExp">
+            function <span class="apidocSignatureSpan">underscore.</span>isRegExp
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.isString">
+            function <span class="apidocSignatureSpan">underscore.</span>isString
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.isUndefined">
+            function <span class="apidocSignatureSpan">underscore.</span>isUndefined
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.iteratee">
+            function <span class="apidocSignatureSpan">underscore.</span>iteratee
+            <span class="apidocSignatureSpan">(value, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.keys">
+            function <span class="apidocSignatureSpan">underscore.</span>keys
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.last">
+            function <span class="apidocSignatureSpan">underscore.</span>last
+            <span class="apidocSignatureSpan">(array, n, guard)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.lastIndexOf">
+            function <span class="apidocSignatureSpan">underscore.</span>lastIndexOf
+            <span class="apidocSignatureSpan">(array, item, idx)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.map">
+            function <span class="apidocSignatureSpan">underscore.</span>map
+            <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.mapObject">
+            function <span class="apidocSignatureSpan">underscore.</span>mapObject
+            <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.matcher">
+            function <span class="apidocSignatureSpan">underscore.</span>matcher
+            <span class="apidocSignatureSpan">(attrs)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.matches">
+            function <span class="apidocSignatureSpan">underscore.</span>matches
+            <span class="apidocSignatureSpan">(attrs)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.max">
+            function <span class="apidocSignatureSpan">underscore.</span>max
+            <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.memoize">
+            function <span class="apidocSignatureSpan">underscore.</span>memoize
+            <span class="apidocSignatureSpan">(func, hasher)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.methods">
+            function <span class="apidocSignatureSpan">underscore.</span>methods
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.min">
+            function <span class="apidocSignatureSpan">underscore.</span>min
+            <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.mixin">
+            function <span class="apidocSignatureSpan">underscore.</span>mixin
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.negate">
+            function <span class="apidocSignatureSpan">underscore.</span>negate
+            <span class="apidocSignatureSpan">(predicate)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.noConflict">
+            function <span class="apidocSignatureSpan">underscore.</span>noConflict
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.noop">
+            function <span class="apidocSignatureSpan">underscore.</span>noop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.now">
+            function <span class="apidocSignatureSpan">underscore.</span>now
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.object">
+            function <span class="apidocSignatureSpan">underscore.</span>object
+            <span class="apidocSignatureSpan">(list, values)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.omit">
+            function <span class="apidocSignatureSpan">underscore.</span>omit
+            <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.once">
+            function <span class="apidocSignatureSpan">underscore.</span>once
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.pairs">
+            function <span class="apidocSignatureSpan">underscore.</span>pairs
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.partial">
+            function <span class="apidocSignatureSpan">underscore.</span>partial
+            <span class="apidocSignatureSpan">(func)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.partition">
+            function <span class="apidocSignatureSpan">underscore.</span>partition
+            <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.pick">
+            function <span class="apidocSignatureSpan">underscore.</span>pick
+            <span class="apidocSignatureSpan">(object, oiteratee, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.pluck">
+            function <span class="apidocSignatureSpan">underscore.</span>pluck
+            <span class="apidocSignatureSpan">(obj, key)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.property">
+            function <span class="apidocSignatureSpan">underscore.</span>property
+            <span class="apidocSignatureSpan">(key)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.propertyOf">
+            function <span class="apidocSignatureSpan">underscore.</span>propertyOf
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.random">
+            function <span class="apidocSignatureSpan">underscore.</span>random
+            <span class="apidocSignatureSpan">(min, max)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.range">
+            function <span class="apidocSignatureSpan">underscore.</span>range
+            <span class="apidocSignatureSpan">(start, stop, step)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.reduce">
+            function <span class="apidocSignatureSpan">underscore.</span>reduce
+            <span class="apidocSignatureSpan">(obj, iteratee, memo, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.reduceRight">
+            function <span class="apidocSignatureSpan">underscore.</span>reduceRight
+            <span class="apidocSignatureSpan">(obj, iteratee, memo, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.reject">
+            function <span class="apidocSignatureSpan">underscore.</span>reject
+            <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.rest">
+            function <span class="apidocSignatureSpan">underscore.</span>rest
+            <span class="apidocSignatureSpan">(array, n, guard)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.result">
+            function <span class="apidocSignatureSpan">underscore.</span>result
+            <span class="apidocSignatureSpan">(object, property, fallback)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.sample">
+            function <span class="apidocSignatureSpan">underscore.</span>sample
+            <span class="apidocSignatureSpan">(obj, n, guard)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.select">
+            function <span class="apidocSignatureSpan">underscore.</span>select
+            <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.shuffle">
+            function <span class="apidocSignatureSpan">underscore.</span>shuffle
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.size">
+            function <span class="apidocSignatureSpan">underscore.</span>size
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.some">
+            function <span class="apidocSignatureSpan">underscore.</span>some
+            <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.sortBy">
+            function <span class="apidocSignatureSpan">underscore.</span>sortBy
+            <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.sortedIndex">
+            function <span class="apidocSignatureSpan">underscore.</span>sortedIndex
+            <span class="apidocSignatureSpan">(array, obj, iteratee, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.tail">
+            function <span class="apidocSignatureSpan">underscore.</span>tail
+            <span class="apidocSignatureSpan">(array, n, guard)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.take">
+            function <span class="apidocSignatureSpan">underscore.</span>take
+            <span class="apidocSignatureSpan">(array, n, guard)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.tap">
+            function <span class="apidocSignatureSpan">underscore.</span>tap
+            <span class="apidocSignatureSpan">(obj, interceptor)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.template">
+            function <span class="apidocSignatureSpan">underscore.</span>template
+            <span class="apidocSignatureSpan">(text, settings, oldSettings)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.throttle">
+            function <span class="apidocSignatureSpan">underscore.</span>throttle
+            <span class="apidocSignatureSpan">(func, wait, options)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.times">
+            function <span class="apidocSignatureSpan">underscore.</span>times
+            <span class="apidocSignatureSpan">(n, iteratee, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.toArray">
+            function <span class="apidocSignatureSpan">underscore.</span>toArray
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.unescape">
+            function <span class="apidocSignatureSpan">underscore.</span>unescape
+            <span class="apidocSignatureSpan">(string)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.union">
+            function <span class="apidocSignatureSpan">underscore.</span>union
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.uniq">
+            function <span class="apidocSignatureSpan">underscore.</span>uniq
+            <span class="apidocSignatureSpan">(array, isSorted, iteratee, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.unique">
+            function <span class="apidocSignatureSpan">underscore.</span>unique
+            <span class="apidocSignatureSpan">(array, isSorted, iteratee, context)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.uniqueId">
+            function <span class="apidocSignatureSpan">underscore.</span>uniqueId
+            <span class="apidocSignatureSpan">(prefix)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.unzip">
+            function <span class="apidocSignatureSpan">underscore.</span>unzip
+            <span class="apidocSignatureSpan">(array)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.values">
+            function <span class="apidocSignatureSpan">underscore.</span>values
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.where">
+            function <span class="apidocSignatureSpan">underscore.</span>where
+            <span class="apidocSignatureSpan">(obj, attrs)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.without">
+            function <span class="apidocSignatureSpan">underscore.</span>without
+            <span class="apidocSignatureSpan">(array)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.wrap">
+            function <span class="apidocSignatureSpan">underscore.</span>wrap
+            <span class="apidocSignatureSpan">(func, wrapper)</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <a class="apidocElementLiA" href="#apidoc.element.underscore.zip">
+            function <span class="apidocSignatureSpan">underscore.</span>zip
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+            
+        </li>
+        
+        <li>
+            
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">underscore.</span>templateSettings</span>
+            
+        </li>
+        
+        <li>
+            
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">underscore.</span>VERSION</span>
+            
+        </li>
+        
+    </ol></li>
+    
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.underscore" id="apidoc.module.underscore">module underscore</a></h1>
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore._" id="apidoc.element.underscore._">
+        function <span class="apidocSignatureSpan">underscore.</span>_
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_ = function (obj) {
+  if (obj instanceof _) return obj;
+  if (!(this instanceof _)) return new _(obj);
+  this._wrapped = obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.after" id="apidoc.element.underscore.after">
+        function <span class="apidocSignatureSpan">underscore.</span>after
+        <span class="apidocSignatureSpan">(times, func)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">after = function (times, func) {
+  return function() {
+    if (--times &#x3c; 1) {
+      return func.apply(this, arguments);
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.all" id="apidoc.element.underscore.all">
+        function <span class="apidocSignatureSpan">underscore.</span>all
+        <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">all = function (obj, predicate, context) {
+  predicate = cb(predicate, context);
+  var keys = !isArrayLike(obj) &#x26;&#x26; _.keys(obj),
+      length = (keys || obj).length;
+  for (var index = 0; index &#x3c; length; index++) {
+    var currentKey = keys ? keys[index] : index;
+    if (!predicate(obj[currentKey], currentKey, obj)) return false;
+  }
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.allKeys" id="apidoc.element.underscore.allKeys">
+        function <span class="apidocSignatureSpan">underscore.</span>allKeys
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">allKeys = function (obj) {
+  if (!_.isObject(obj)) return [];
+  var keys = [];
+  for (var key in obj) keys.push(key);
+  // Ahem, IE &#x3c; 9.
+  if (hasEnumBug) collectNonEnumProps(obj, keys);
+  return keys;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.any" id="apidoc.element.underscore.any">
+        function <span class="apidocSignatureSpan">underscore.</span>any
+        <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">any = function (obj, predicate, context) {
+  predicate = cb(predicate, context);
+  var keys = !isArrayLike(obj) &#x26;&#x26; _.keys(obj),
+      length = (keys || obj).length;
+  for (var index = 0; index &#x3c; length; index++) {
+    var currentKey = keys ? keys[index] : index;
+    if (predicate(obj[currentKey], currentKey, obj)) return true;
+  }
+  return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.assign" id="apidoc.element.underscore.assign">
+        function <span class="apidocSignatureSpan">underscore.</span>assign
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">assign = function (obj) {
+  var length = arguments.length;
+  if (length &#x3c; 2 || obj == null) return obj;
+  for (var index = 1; index &#x3c; length; index++) {
+    var source = arguments[index],
+        keys = keysFunc(source),
+        l = keys.length;
+    for (var i = 0; i &#x3c; l; i++) {
+      var key = keys[i];
+      if (!undefinedOnly || obj[key] === void 0) obj[key] = source[key];
+    }
+  }
+  return obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.before" id="apidoc.element.underscore.before">
+        function <span class="apidocSignatureSpan">underscore.</span>before
+        <span class="apidocSignatureSpan">(times, func)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">before = function (times, func) {
+  var memo;
+  return function() {
+    if (--times &#x3e; 0) {
+      memo = func.apply(this, arguments);
+    }
+    if (times &#x3c;= 1) func = null;
+    return memo;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.bind" id="apidoc.element.underscore.bind">
+        function <span class="apidocSignatureSpan">underscore.</span>bind
+        <span class="apidocSignatureSpan">(func, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">bind = function (func, context) {
+  if (nativeBind &#x26;&#x26; func.bind === nativeBind) return nativeBind.apply(func, slice.call(arguments, 1));
+  if (!_.isFunction(func)) throw new TypeError(&#x27;Bind must be called on a function&#x27;);
+  var args = slice.call(arguments, 2);
+  var bound = function() {
+    return executeBound(func, bound, context, this, args.concat(slice.call(arguments)));
+  };
+  return bound;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.bindAll" id="apidoc.element.underscore.bindAll">
+        function <span class="apidocSignatureSpan">underscore.</span>bindAll
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">bindAll = function (obj) {
+  var i, length = arguments.length, key;
+  if (length &#x3c;= 1) throw new Error(&#x27;bindAll must be passed function names&#x27;);
+  for (i = 1; i &#x3c; length; i++) {
+    key = arguments[i];
+    obj[key] = _.bind(obj[key], obj);
+  }
+  return obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.chain" id="apidoc.element.underscore.chain">
+        function <span class="apidocSignatureSpan">underscore.</span>chain
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">chain = function (obj) {
+  var instance = _(obj);
+  instance._chain = true;
+  return instance;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.clone" id="apidoc.element.underscore.clone">
+        function <span class="apidocSignatureSpan">underscore.</span>clone
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">clone = function (obj) {
+  if (!_.isObject(obj)) return obj;
+  return _.isArray(obj) ? obj.slice() : _.extend({}, obj);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.collect" id="apidoc.element.underscore.collect">
+        function <span class="apidocSignatureSpan">underscore.</span>collect
+        <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">collect = function (obj, iteratee, context) {
+  iteratee = cb(iteratee, context);
+  var keys = !isArrayLike(obj) &#x26;&#x26; _.keys(obj),
+      length = (keys || obj).length,
+      results = Array(length);
+  for (var index = 0; index &#x3c; length; index++) {
+    var currentKey = keys ? keys[index] : index;
+    results[index] = iteratee(obj[currentKey], currentKey, obj);
+  }
+  return results;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.compact" id="apidoc.element.underscore.compact">
+        function <span class="apidocSignatureSpan">underscore.</span>compact
+        <span class="apidocSignatureSpan">(array)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">compact = function (array) {
+  return _.filter(array, _.identity);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.compose" id="apidoc.element.underscore.compose">
+        function <span class="apidocSignatureSpan">underscore.</span>compose
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">compose = function () {
+  var args = arguments;
+  var start = args.length - 1;
+  return function() {
+    var i = start;
+    var result = args[start].apply(this, arguments);
+    while (i--) result = args[i].call(this, result);
+    return result;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.constant" id="apidoc.element.underscore.constant">
+        function <span class="apidocSignatureSpan">underscore.</span>constant
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constant = function (value) {
+  return function() {
+    return value;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.contains" id="apidoc.element.underscore.contains">
+        function <span class="apidocSignatureSpan">underscore.</span>contains
+        <span class="apidocSignatureSpan">(obj, item, fromIndex, guard)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">contains = function (obj, item, fromIndex, guard) {
+  if (!isArrayLike(obj)) obj = _.values(obj);
+  if (typeof fromIndex != &#x27;number&#x27; || guard) fromIndex = 0;
+  return _.indexOf(obj, item, fromIndex) &#x3e;= 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.countBy" id="apidoc.element.underscore.countBy">
+        function <span class="apidocSignatureSpan">underscore.</span>countBy
+        <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">countBy = function (obj, iteratee, context) {
+  var result = {};
+  iteratee = cb(iteratee, context);
+  _.each(obj, function(value, index) {
+    var key = iteratee(value, index, obj);
+    behavior(result, value, key);
+  });
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.create" id="apidoc.element.underscore.create">
+        function <span class="apidocSignatureSpan">underscore.</span>create
+        <span class="apidocSignatureSpan">(prototype, props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (prototype, props) {
+  var result = baseCreate(prototype);
+  if (props) _.extendOwn(result, props);
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.debounce" id="apidoc.element.underscore.debounce">
+        function <span class="apidocSignatureSpan">underscore.</span>debounce
+        <span class="apidocSignatureSpan">(func, wait, immediate)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">debounce = function (func, wait, immediate) {
+  var timeout, args, context, timestamp, result;
+
+  var later = function() {
+    var last = _.now() - timestamp;
+
+    if (last &#x3c; wait &#x26;&#x26; last &#x3e;= 0) {
+      timeout = setTimeout(later, wait - last);
+    } else {
+      timeout = null;
+      if (!immediate) {
+        result = func.apply(context, args);
+        if (!timeout) context = args = null;
+      }
+    }
+  };
+
+  return function() {
+    context = this;
+    args = arguments;
+    timestamp = _.now();
+    var callNow = immediate &#x26;&#x26; !timeout;
+    if (!timeout) timeout = setTimeout(later, wait);
+    if (callNow) {
+      result = func.apply(context, args);
+      context = args = null;
+    }
+
+    return result;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.defaults" id="apidoc.element.underscore.defaults">
+        function <span class="apidocSignatureSpan">underscore.</span>defaults
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">defaults = function (obj) {
+  var length = arguments.length;
+  if (length &#x3c; 2 || obj == null) return obj;
+  for (var index = 1; index &#x3c; length; index++) {
+    var source = arguments[index],
+        keys = keysFunc(source),
+        l = keys.length;
+    for (var i = 0; i &#x3c; l; i++) {
+      var key = keys[i];
+      if (!undefinedOnly || obj[key] === void 0) obj[key] = source[key];
+    }
+  }
+  return obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.defer" id="apidoc.element.underscore.defer">
+        function <span class="apidocSignatureSpan">underscore.</span>defer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">defer = function () {
+  var position = 0, length = boundArgs.length;
+  var args = Array(length);
+  for (var i = 0; i &#x3c; length; i++) {
+    args[i] = boundArgs[i] === _ ? arguments[position++] : boundArgs[i];
+  }
+  while (position &#x3c; arguments.length) args.push(arguments[position++]);
+  return executeBound(func, bound, this, this, args);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.delay" id="apidoc.element.underscore.delay">
+        function <span class="apidocSignatureSpan">underscore.</span>delay
+        <span class="apidocSignatureSpan">(func, wait)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">delay = function (func, wait) {
+  var args = slice.call(arguments, 2);
+  return setTimeout(function(){
+    return func.apply(null, args);
+  }, wait);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.detect" id="apidoc.element.underscore.detect">
+        function <span class="apidocSignatureSpan">underscore.</span>detect
+        <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">detect = function (obj, predicate, context) {
+  var key;
+  if (isArrayLike(obj)) {
+    key = _.findIndex(obj, predicate, context);
+  } else {
+    key = _.findKey(obj, predicate, context);
+  }
+  if (key !== void 0 &#x26;&#x26; key !== -1) return obj[key];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.difference" id="apidoc.element.underscore.difference">
+        function <span class="apidocSignatureSpan">underscore.</span>difference
+        <span class="apidocSignatureSpan">(array)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">difference = function (array) {
+  var rest = flatten(arguments, true, true, 1);
+  return _.filter(array, function(value){
+    return !_.contains(rest, value);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.drop" id="apidoc.element.underscore.drop">
+        function <span class="apidocSignatureSpan">underscore.</span>drop
+        <span class="apidocSignatureSpan">(array, n, guard)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">drop = function (array, n, guard) {
+  return slice.call(array, n == null || guard ? 1 : n);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.each" id="apidoc.element.underscore.each">
+        function <span class="apidocSignatureSpan">underscore.</span>each
+        <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">each = function (obj, iteratee, context) {
+  iteratee = optimizeCb(iteratee, context);
+  var i, length;
+  if (isArrayLike(obj)) {
+    for (i = 0, length = obj.length; i &#x3c; length; i++) {
+      iteratee(obj[i], i, obj);
+    }
+  } else {
+    var keys = _.keys(obj);
+    for (i = 0, length = keys.length; i &#x3c; length; i++) {
+      iteratee(obj[keys[i]], keys[i], obj);
+    }
+  }
+  return obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.escape" id="apidoc.element.underscore.escape">
+        function <span class="apidocSignatureSpan">underscore.</span>escape
+        <span class="apidocSignatureSpan">(string)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">escape = function (string) {
+  string = string == null ? &#x27;&#x27; : &#x27;&#x27; + string;
+  return testRegexp.test(string) ? string.replace(replaceRegexp, escaper) : string;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.every" id="apidoc.element.underscore.every">
+        function <span class="apidocSignatureSpan">underscore.</span>every
+        <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">every = function (obj, predicate, context) {
+  predicate = cb(predicate, context);
+  var keys = !isArrayLike(obj) &#x26;&#x26; _.keys(obj),
+      length = (keys || obj).length;
+  for (var index = 0; index &#x3c; length; index++) {
+    var currentKey = keys ? keys[index] : index;
+    if (!predicate(obj[currentKey], currentKey, obj)) return false;
+  }
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.extend" id="apidoc.element.underscore.extend">
+        function <span class="apidocSignatureSpan">underscore.</span>extend
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">extend = function (obj) {
+  var length = arguments.length;
+  if (length &#x3c; 2 || obj == null) return obj;
+  for (var index = 1; index &#x3c; length; index++) {
+    var source = arguments[index],
+        keys = keysFunc(source),
+        l = keys.length;
+    for (var i = 0; i &#x3c; l; i++) {
+      var key = keys[i];
+      if (!undefinedOnly || obj[key] === void 0) obj[key] = source[key];
+    }
+  }
+  return obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.extendOwn" id="apidoc.element.underscore.extendOwn">
+        function <span class="apidocSignatureSpan">underscore.</span>extendOwn
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">extendOwn = function (obj) {
+  var length = arguments.length;
+  if (length &#x3c; 2 || obj == null) return obj;
+  for (var index = 1; index &#x3c; length; index++) {
+    var source = arguments[index],
+        keys = keysFunc(source),
+        l = keys.length;
+    for (var i = 0; i &#x3c; l; i++) {
+      var key = keys[i];
+      if (!undefinedOnly || obj[key] === void 0) obj[key] = source[key];
+    }
+  }
+  return obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.filter" id="apidoc.element.underscore.filter">
+        function <span class="apidocSignatureSpan">underscore.</span>filter
+        <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">filter = function (obj, predicate, context) {
+  var results = [];
+  predicate = cb(predicate, context);
+  _.each(obj, function(value, index, list) {
+    if (predicate(value, index, list)) results.push(value);
+  });
+  return results;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.find" id="apidoc.element.underscore.find">
+        function <span class="apidocSignatureSpan">underscore.</span>find
+        <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">find = function (obj, predicate, context) {
+  var key;
+  if (isArrayLike(obj)) {
+    key = _.findIndex(obj, predicate, context);
+  } else {
+    key = _.findKey(obj, predicate, context);
+  }
+  if (key !== void 0 &#x26;&#x26; key !== -1) return obj[key];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.findIndex" id="apidoc.element.underscore.findIndex">
+        function <span class="apidocSignatureSpan">underscore.</span>findIndex
+        <span class="apidocSignatureSpan">(array, predicate, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">findIndex = function (array, predicate, context) {
+  predicate = cb(predicate, context);
+  var length = getLength(array);
+  var index = dir &#x3e; 0 ? 0 : length - 1;
+  for (; index &#x3e;= 0 &#x26;&#x26; index &#x3c; length; index += dir) {
+    if (predicate(array[index], index, array)) return index;
+  }
+  return -1;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.findKey" id="apidoc.element.underscore.findKey">
+        function <span class="apidocSignatureSpan">underscore.</span>findKey
+        <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">findKey = function (obj, predicate, context) {
+  predicate = cb(predicate, context);
+  var keys = _.keys(obj), key;
+  for (var i = 0, length = keys.length; i &#x3c; length; i++) {
+    key = keys[i];
+    if (predicate(obj[key], key, obj)) return key;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.findLastIndex" id="apidoc.element.underscore.findLastIndex">
+        function <span class="apidocSignatureSpan">underscore.</span>findLastIndex
+        <span class="apidocSignatureSpan">(array, predicate, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">findLastIndex = function (array, predicate, context) {
+  predicate = cb(predicate, context);
+  var length = getLength(array);
+  var index = dir &#x3e; 0 ? 0 : length - 1;
+  for (; index &#x3e;= 0 &#x26;&#x26; index &#x3c; length; index += dir) {
+    if (predicate(array[index], index, array)) return index;
+  }
+  return -1;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.findWhere" id="apidoc.element.underscore.findWhere">
+        function <span class="apidocSignatureSpan">underscore.</span>findWhere
+        <span class="apidocSignatureSpan">(obj, attrs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">findWhere = function (obj, attrs) {
+  return _.find(obj, _.matcher(attrs));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.first" id="apidoc.element.underscore.first">
+        function <span class="apidocSignatureSpan">underscore.</span>first
+        <span class="apidocSignatureSpan">(array, n, guard)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">first = function (array, n, guard) {
+  if (array == null) return void 0;
+  if (n == null || guard) return array[0];
+  return _.initial(array, array.length - n);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.flatten" id="apidoc.element.underscore.flatten">
+        function <span class="apidocSignatureSpan">underscore.</span>flatten
+        <span class="apidocSignatureSpan">(array, shallow)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">flatten = function (array, shallow) {
+  return flatten(array, shallow, false);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.foldl" id="apidoc.element.underscore.foldl">
+        function <span class="apidocSignatureSpan">underscore.</span>foldl
+        <span class="apidocSignatureSpan">(obj, iteratee, memo, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">foldl = function (obj, iteratee, memo, context) {
+  iteratee = optimizeCb(iteratee, context, 4);
+  var keys = !isArrayLike(obj) &#x26;&#x26; _.keys(obj),
+      length = (keys || obj).length,
+      index = dir &#x3e; 0 ? 0 : length - 1;
+  // Determine the initial value if none is provided.
+  if (arguments.length &#x3c; 3) {
+    memo = obj[keys ? keys[index] : index];
+    index += dir;
+  }
+  return iterator(obj, iteratee, memo, keys, index, length);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.foldr" id="apidoc.element.underscore.foldr">
+        function <span class="apidocSignatureSpan">underscore.</span>foldr
+        <span class="apidocSignatureSpan">(obj, iteratee, memo, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">foldr = function (obj, iteratee, memo, context) {
+  iteratee = optimizeCb(iteratee, context, 4);
+  var keys = !isArrayLike(obj) &#x26;&#x26; _.keys(obj),
+      length = (keys || obj).length,
+      index = dir &#x3e; 0 ? 0 : length - 1;
+  // Determine the initial value if none is provided.
+  if (arguments.length &#x3c; 3) {
+    memo = obj[keys ? keys[index] : index];
+    index += dir;
+  }
+  return iterator(obj, iteratee, memo, keys, index, length);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.forEach" id="apidoc.element.underscore.forEach">
+        function <span class="apidocSignatureSpan">underscore.</span>forEach
+        <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">forEach = function (obj, iteratee, context) {
+  iteratee = optimizeCb(iteratee, context);
+  var i, length;
+  if (isArrayLike(obj)) {
+    for (i = 0, length = obj.length; i &#x3c; length; i++) {
+      iteratee(obj[i], i, obj);
+    }
+  } else {
+    var keys = _.keys(obj);
+    for (i = 0, length = keys.length; i &#x3c; length; i++) {
+      iteratee(obj[keys[i]], keys[i], obj);
+    }
+  }
+  return obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.functions" id="apidoc.element.underscore.functions">
+        function <span class="apidocSignatureSpan">underscore.</span>functions
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">functions = function (obj) {
+  var names = [];
+  for (var key in obj) {
+    if (_.isFunction(obj[key])) names.push(key);
+  }
+  return names.sort();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.groupBy" id="apidoc.element.underscore.groupBy">
+        function <span class="apidocSignatureSpan">underscore.</span>groupBy
+        <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">groupBy = function (obj, iteratee, context) {
+  var result = {};
+  iteratee = cb(iteratee, context);
+  _.each(obj, function(value, index) {
+    var key = iteratee(value, index, obj);
+    behavior(result, value, key);
+  });
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.has" id="apidoc.element.underscore.has">
+        function <span class="apidocSignatureSpan">underscore.</span>has
+        <span class="apidocSignatureSpan">(obj, key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">has = function (obj, key) {
+  return obj != null &#x26;&#x26; hasOwnProperty.call(obj, key);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.head" id="apidoc.element.underscore.head">
+        function <span class="apidocSignatureSpan">underscore.</span>head
+        <span class="apidocSignatureSpan">(array, n, guard)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">head = function (array, n, guard) {
+  if (array == null) return void 0;
+  if (n == null || guard) return array[0];
+  return _.initial(array, array.length - n);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.identity" id="apidoc.element.underscore.identity">
+        function <span class="apidocSignatureSpan">underscore.</span>identity
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">identity = function (value) {
+  return value;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.include" id="apidoc.element.underscore.include">
+        function <span class="apidocSignatureSpan">underscore.</span>include
+        <span class="apidocSignatureSpan">(obj, item, fromIndex, guard)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">include = function (obj, item, fromIndex, guard) {
+  if (!isArrayLike(obj)) obj = _.values(obj);
+  if (typeof fromIndex != &#x27;number&#x27; || guard) fromIndex = 0;
+  return _.indexOf(obj, item, fromIndex) &#x3e;= 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.includes" id="apidoc.element.underscore.includes">
+        function <span class="apidocSignatureSpan">underscore.</span>includes
+        <span class="apidocSignatureSpan">(obj, item, fromIndex, guard)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">includes = function (obj, item, fromIndex, guard) {
+  if (!isArrayLike(obj)) obj = _.values(obj);
+  if (typeof fromIndex != &#x27;number&#x27; || guard) fromIndex = 0;
+  return _.indexOf(obj, item, fromIndex) &#x3e;= 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.indexBy" id="apidoc.element.underscore.indexBy">
+        function <span class="apidocSignatureSpan">underscore.</span>indexBy
+        <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">indexBy = function (obj, iteratee, context) {
+  var result = {};
+  iteratee = cb(iteratee, context);
+  _.each(obj, function(value, index) {
+    var key = iteratee(value, index, obj);
+    behavior(result, value, key);
+  });
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.indexOf" id="apidoc.element.underscore.indexOf">
+        function <span class="apidocSignatureSpan">underscore.</span>indexOf
+        <span class="apidocSignatureSpan">(array, item, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">indexOf = function (array, item, idx) {
+  var i = 0, length = getLength(array);
+  if (typeof idx == &#x27;number&#x27;) {
+    if (dir &#x3e; 0) {
+        i = idx &#x3e;= 0 ? idx : Math.max(idx + length, i);
+    } else {
+        length = idx &#x3e;= 0 ? Math.min(idx + 1, length) : idx + length + 1;
+    }
+  } else if (sortedIndex &#x26;&#x26; idx &#x26;&#x26; length) {
+    idx = sortedIndex(array, item);
+    return array[idx] === item ? idx : -1;
+  }
+  if (item !== item) {
+    idx = predicateFind(slice.call(array, i, length), _.isNaN);
+    return idx &#x3e;= 0 ? idx + i : -1;
+  }
+  for (idx = dir &#x3e; 0 ? i : length - 1; idx &#x3e;= 0 &#x26;&#x26; idx &#x3c; length; idx += dir) {
+    if (array[idx] === item) return idx;
+  }
+  return -1;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.initial" id="apidoc.element.underscore.initial">
+        function <span class="apidocSignatureSpan">underscore.</span>initial
+        <span class="apidocSignatureSpan">(array, n, guard)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initial = function (array, n, guard) {
+  return slice.call(array, 0, Math.max(0, array.length - (n == null || guard ? 1 : n)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.inject" id="apidoc.element.underscore.inject">
+        function <span class="apidocSignatureSpan">underscore.</span>inject
+        <span class="apidocSignatureSpan">(obj, iteratee, memo, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inject = function (obj, iteratee, memo, context) {
+  iteratee = optimizeCb(iteratee, context, 4);
+  var keys = !isArrayLike(obj) &#x26;&#x26; _.keys(obj),
+      length = (keys || obj).length,
+      index = dir &#x3e; 0 ? 0 : length - 1;
+  // Determine the initial value if none is provided.
+  if (arguments.length &#x3c; 3) {
+    memo = obj[keys ? keys[index] : index];
+    index += dir;
+  }
+  return iterator(obj, iteratee, memo, keys, index, length);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.intersection" id="apidoc.element.underscore.intersection">
+        function <span class="apidocSignatureSpan">underscore.</span>intersection
+        <span class="apidocSignatureSpan">(array)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">intersection = function (array) {
+  var result = [];
+  var argsLength = arguments.length;
+  for (var i = 0, length = getLength(array); i &#x3c; length; i++) {
+    var item = array[i];
+    if (_.contains(result, item)) continue;
+    for (var j = 1; j &#x3c; argsLength; j++) {
+      if (!_.contains(arguments[j], item)) break;
+    }
+    if (j === argsLength) result.push(item);
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.invert" id="apidoc.element.underscore.invert">
+        function <span class="apidocSignatureSpan">underscore.</span>invert
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">invert = function (obj) {
+  var result = {};
+  var keys = _.keys(obj);
+  for (var i = 0, length = keys.length; i &#x3c; length; i++) {
+    result[obj[keys[i]]] = keys[i];
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.invoke" id="apidoc.element.underscore.invoke">
+        function <span class="apidocSignatureSpan">underscore.</span>invoke
+        <span class="apidocSignatureSpan">(obj, method)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">invoke = function (obj, method) {
+  var args = slice.call(arguments, 2);
+  var isFunc = _.isFunction(method);
+  return _.map(obj, function(value) {
+    var func = isFunc ? method : value[method];
+    return func == null ? func : func.apply(value, args);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.isArguments" id="apidoc.element.underscore.isArguments">
+        function <span class="apidocSignatureSpan">underscore.</span>isArguments
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isArguments = function (obj) {
+  return toString.call(obj) === &#x27;[object &#x27; + name + &#x27;]&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.isArray" id="apidoc.element.underscore.isArray">
+        function <span class="apidocSignatureSpan">underscore.</span>isArray
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isArray() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.isBoolean" id="apidoc.element.underscore.isBoolean">
+        function <span class="apidocSignatureSpan">underscore.</span>isBoolean
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isBoolean = function (obj) {
+  return obj === true || obj === false || toString.call(obj) === &#x27;[object Boolean]&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.isDate" id="apidoc.element.underscore.isDate">
+        function <span class="apidocSignatureSpan">underscore.</span>isDate
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isDate = function (obj) {
+  return toString.call(obj) === &#x27;[object &#x27; + name + &#x27;]&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.isElement" id="apidoc.element.underscore.isElement">
+        function <span class="apidocSignatureSpan">underscore.</span>isElement
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isElement = function (obj) {
+  return !!(obj &#x26;&#x26; obj.nodeType === 1);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.isEmpty" id="apidoc.element.underscore.isEmpty">
+        function <span class="apidocSignatureSpan">underscore.</span>isEmpty
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isEmpty = function (obj) {
+  if (obj == null) return true;
+  if (isArrayLike(obj) &#x26;&#x26; (_.isArray(obj) || _.isString(obj) || _.isArguments(obj))) return obj.length === 0;
+  return _.keys(obj).length === 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.isEqual" id="apidoc.element.underscore.isEqual">
+        function <span class="apidocSignatureSpan">underscore.</span>isEqual
+        <span class="apidocSignatureSpan">(a, b)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isEqual = function (a, b) {
+  return eq(a, b);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.isError" id="apidoc.element.underscore.isError">
+        function <span class="apidocSignatureSpan">underscore.</span>isError
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isError = function (obj) {
+  return toString.call(obj) === &#x27;[object &#x27; + name + &#x27;]&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.isFinite" id="apidoc.element.underscore.isFinite">
+        function <span class="apidocSignatureSpan">underscore.</span>isFinite
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isFinite = function (obj) {
+  return isFinite(obj) &#x26;&#x26; !isNaN(parseFloat(obj));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.isFunction" id="apidoc.element.underscore.isFunction">
+        function <span class="apidocSignatureSpan">underscore.</span>isFunction
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isFunction = function (obj) {
+  return typeof obj == &#x27;function&#x27; || false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.isMatch" id="apidoc.element.underscore.isMatch">
+        function <span class="apidocSignatureSpan">underscore.</span>isMatch
+        <span class="apidocSignatureSpan">(object, attrs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isMatch = function (object, attrs) {
+  var keys = _.keys(attrs), length = keys.length;
+  if (object == null) return !length;
+  var obj = Object(object);
+  for (var i = 0; i &#x3c; length; i++) {
+    var key = keys[i];
+    if (attrs[key] !== obj[key] || !(key in obj)) return false;
+  }
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.isNaN" id="apidoc.element.underscore.isNaN">
+        function <span class="apidocSignatureSpan">underscore.</span>isNaN
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isNaN = function (obj) {
+  return _.isNumber(obj) &#x26;&#x26; obj !== +obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.isNull" id="apidoc.element.underscore.isNull">
+        function <span class="apidocSignatureSpan">underscore.</span>isNull
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isNull = function (obj) {
+  return obj === null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.isNumber" id="apidoc.element.underscore.isNumber">
+        function <span class="apidocSignatureSpan">underscore.</span>isNumber
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isNumber = function (obj) {
+  return toString.call(obj) === &#x27;[object &#x27; + name + &#x27;]&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.isObject" id="apidoc.element.underscore.isObject">
+        function <span class="apidocSignatureSpan">underscore.</span>isObject
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isObject = function (obj) {
+  var type = typeof obj;
+  return type === &#x27;function&#x27; || type === &#x27;object&#x27; &#x26;&#x26; !!obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.isRegExp" id="apidoc.element.underscore.isRegExp">
+        function <span class="apidocSignatureSpan">underscore.</span>isRegExp
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRegExp = function (obj) {
+  return toString.call(obj) === &#x27;[object &#x27; + name + &#x27;]&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.isString" id="apidoc.element.underscore.isString">
+        function <span class="apidocSignatureSpan">underscore.</span>isString
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isString = function (obj) {
+  return toString.call(obj) === &#x27;[object &#x27; + name + &#x27;]&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.isUndefined" id="apidoc.element.underscore.isUndefined">
+        function <span class="apidocSignatureSpan">underscore.</span>isUndefined
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isUndefined = function (obj) {
+  return obj === void 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.iteratee" id="apidoc.element.underscore.iteratee">
+        function <span class="apidocSignatureSpan">underscore.</span>iteratee
+        <span class="apidocSignatureSpan">(value, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">iteratee = function (value, context) {
+  return cb(value, context, Infinity);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.keys" id="apidoc.element.underscore.keys">
+        function <span class="apidocSignatureSpan">underscore.</span>keys
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">keys = function (obj) {
+  if (!_.isObject(obj)) return [];
+  if (nativeKeys) return nativeKeys(obj);
+  var keys = [];
+  for (var key in obj) if (_.has(obj, key)) keys.push(key);
+  // Ahem, IE &#x3c; 9.
+  if (hasEnumBug) collectNonEnumProps(obj, keys);
+  return keys;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.last" id="apidoc.element.underscore.last">
+        function <span class="apidocSignatureSpan">underscore.</span>last
+        <span class="apidocSignatureSpan">(array, n, guard)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">last = function (array, n, guard) {
+  if (array == null) return void 0;
+  if (n == null || guard) return array[array.length - 1];
+  return _.rest(array, Math.max(0, array.length - n));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.lastIndexOf" id="apidoc.element.underscore.lastIndexOf">
+        function <span class="apidocSignatureSpan">underscore.</span>lastIndexOf
+        <span class="apidocSignatureSpan">(array, item, idx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">lastIndexOf = function (array, item, idx) {
+  var i = 0, length = getLength(array);
+  if (typeof idx == &#x27;number&#x27;) {
+    if (dir &#x3e; 0) {
+        i = idx &#x3e;= 0 ? idx : Math.max(idx + length, i);
+    } else {
+        length = idx &#x3e;= 0 ? Math.min(idx + 1, length) : idx + length + 1;
+    }
+  } else if (sortedIndex &#x26;&#x26; idx &#x26;&#x26; length) {
+    idx = sortedIndex(array, item);
+    return array[idx] === item ? idx : -1;
+  }
+  if (item !== item) {
+    idx = predicateFind(slice.call(array, i, length), _.isNaN);
+    return idx &#x3e;= 0 ? idx + i : -1;
+  }
+  for (idx = dir &#x3e; 0 ? i : length - 1; idx &#x3e;= 0 &#x26;&#x26; idx &#x3c; length; idx += dir) {
+    if (array[idx] === item) return idx;
+  }
+  return -1;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.map" id="apidoc.element.underscore.map">
+        function <span class="apidocSignatureSpan">underscore.</span>map
+        <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">map = function (obj, iteratee, context) {
+  iteratee = cb(iteratee, context);
+  var keys = !isArrayLike(obj) &#x26;&#x26; _.keys(obj),
+      length = (keys || obj).length,
+      results = Array(length);
+  for (var index = 0; index &#x3c; length; index++) {
+    var currentKey = keys ? keys[index] : index;
+    results[index] = iteratee(obj[currentKey], currentKey, obj);
+  }
+  return results;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.mapObject" id="apidoc.element.underscore.mapObject">
+        function <span class="apidocSignatureSpan">underscore.</span>mapObject
+        <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">mapObject = function (obj, iteratee, context) {
+  iteratee = cb(iteratee, context);
+  var keys =  _.keys(obj),
+        length = keys.length,
+        results = {},
+        currentKey;
+    for (var index = 0; index &#x3c; length; index++) {
+      currentKey = keys[index];
+      results[currentKey] = iteratee(obj[currentKey], currentKey, obj);
+    }
+    return results;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.matcher" id="apidoc.element.underscore.matcher">
+        function <span class="apidocSignatureSpan">underscore.</span>matcher
+        <span class="apidocSignatureSpan">(attrs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">matcher = function (attrs) {
+  attrs = _.extendOwn({}, attrs);
+  return function(obj) {
+    return _.isMatch(obj, attrs);
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.matches" id="apidoc.element.underscore.matches">
+        function <span class="apidocSignatureSpan">underscore.</span>matches
+        <span class="apidocSignatureSpan">(attrs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">matches = function (attrs) {
+  attrs = _.extendOwn({}, attrs);
+  return function(obj) {
+    return _.isMatch(obj, attrs);
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.max" id="apidoc.element.underscore.max">
+        function <span class="apidocSignatureSpan">underscore.</span>max
+        <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">max = function (obj, iteratee, context) {
+  var result = -Infinity, lastComputed = -Infinity,
+      value, computed;
+  if (iteratee == null &#x26;&#x26; obj != null) {
+    obj = isArrayLike(obj) ? obj : _.values(obj);
+    for (var i = 0, length = obj.length; i &#x3c; length; i++) {
+      value = obj[i];
+      if (value &#x3e; result) {
+        result = value;
+      }
+    }
+  } else {
+    iteratee = cb(iteratee, context);
+    _.each(obj, function(value, index, list) {
+      computed = iteratee(value, index, list);
+      if (computed &#x3e; lastComputed || computed === -Infinity &#x26;&#x26; result === -Infinity) {
+        result = value;
+        lastComputed = computed;
+      }
+    });
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.memoize" id="apidoc.element.underscore.memoize">
+        function <span class="apidocSignatureSpan">underscore.</span>memoize
+        <span class="apidocSignatureSpan">(func, hasher)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">memoize = function (func, hasher) {
+  var memoize = function(key) {
+    var cache = memoize.cache;
+    var address = &#x27;&#x27; + (hasher ? hasher.apply(this, arguments) : key);
+    if (!_.has(cache, address)) cache[address] = func.apply(this, arguments);
+    return cache[address];
+  };
+  memoize.cache = {};
+  return memoize;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.methods" id="apidoc.element.underscore.methods">
+        function <span class="apidocSignatureSpan">underscore.</span>methods
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">methods = function (obj) {
+  var names = [];
+  for (var key in obj) {
+    if (_.isFunction(obj[key])) names.push(key);
+  }
+  return names.sort();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.min" id="apidoc.element.underscore.min">
+        function <span class="apidocSignatureSpan">underscore.</span>min
+        <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">min = function (obj, iteratee, context) {
+  var result = Infinity, lastComputed = Infinity,
+      value, computed;
+  if (iteratee == null &#x26;&#x26; obj != null) {
+    obj = isArrayLike(obj) ? obj : _.values(obj);
+    for (var i = 0, length = obj.length; i &#x3c; length; i++) {
+      value = obj[i];
+      if (value &#x3c; result) {
+        result = value;
+      }
+    }
+  } else {
+    iteratee = cb(iteratee, context);
+    _.each(obj, function(value, index, list) {
+      computed = iteratee(value, index, list);
+      if (computed &#x3c; lastComputed || computed === Infinity &#x26;&#x26; result === Infinity) {
+        result = value;
+        lastComputed = computed;
+      }
+    });
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.mixin" id="apidoc.element.underscore.mixin">
+        function <span class="apidocSignatureSpan">underscore.</span>mixin
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">mixin = function (obj) {
+  _.each(_.functions(obj), function(name) {
+    var func = _[name] = obj[name];
+    _.prototype[name] = function() {
+      var args = [this._wrapped];
+      push.apply(args, arguments);
+      return result(this, func.apply(_, args));
+    };
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.negate" id="apidoc.element.underscore.negate">
+        function <span class="apidocSignatureSpan">underscore.</span>negate
+        <span class="apidocSignatureSpan">(predicate)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">negate = function (predicate) {
+  return function() {
+    return !predicate.apply(this, arguments);
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.noConflict" id="apidoc.element.underscore.noConflict">
+        function <span class="apidocSignatureSpan">underscore.</span>noConflict
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">noConflict = function () {
+  root._ = previousUnderscore;
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.noop" id="apidoc.element.underscore.noop">
+        function <span class="apidocSignatureSpan">underscore.</span>noop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">noop = function (){}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.now" id="apidoc.element.underscore.now">
+        function <span class="apidocSignatureSpan">underscore.</span>now
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function now() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.object" id="apidoc.element.underscore.object">
+        function <span class="apidocSignatureSpan">underscore.</span>object
+        <span class="apidocSignatureSpan">(list, values)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">object = function (list, values) {
+  var result = {};
+  for (var i = 0, length = getLength(list); i &#x3c; length; i++) {
+    if (values) {
+      result[list[i]] = values[i];
+    } else {
+      result[list[i][0]] = list[i][1];
+    }
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.omit" id="apidoc.element.underscore.omit">
+        function <span class="apidocSignatureSpan">underscore.</span>omit
+        <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">omit = function (obj, iteratee, context) {
+  if (_.isFunction(iteratee)) {
+    iteratee = _.negate(iteratee);
+  } else {
+    var keys = _.map(flatten(arguments, false, false, 1), String);
+    iteratee = function(value, key) {
+      return !_.contains(keys, key);
+    };
+  }
+  return _.pick(obj, iteratee, context);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.once" id="apidoc.element.underscore.once">
+        function <span class="apidocSignatureSpan">underscore.</span>once
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">once = function () {
+  var position = 0, length = boundArgs.length;
+  var args = Array(length);
+  for (var i = 0; i &#x3c; length; i++) {
+    args[i] = boundArgs[i] === _ ? arguments[position++] : boundArgs[i];
+  }
+  while (position &#x3c; arguments.length) args.push(arguments[position++]);
+  return executeBound(func, bound, this, this, args);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.pairs" id="apidoc.element.underscore.pairs">
+        function <span class="apidocSignatureSpan">underscore.</span>pairs
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pairs = function (obj) {
+  var keys = _.keys(obj);
+  var length = keys.length;
+  var pairs = Array(length);
+  for (var i = 0; i &#x3c; length; i++) {
+    pairs[i] = [keys[i], obj[keys[i]]];
+  }
+  return pairs;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.partial" id="apidoc.element.underscore.partial">
+        function <span class="apidocSignatureSpan">underscore.</span>partial
+        <span class="apidocSignatureSpan">(func)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">partial = function (func) {
+  var boundArgs = slice.call(arguments, 1);
+  var bound = function() {
+    var position = 0, length = boundArgs.length;
+    var args = Array(length);
+    for (var i = 0; i &#x3c; length; i++) {
+      args[i] = boundArgs[i] === _ ? arguments[position++] : boundArgs[i];
+    }
+    while (position &#x3c; arguments.length) args.push(arguments[position++]);
+    return executeBound(func, bound, this, this, args);
+  };
+  return bound;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.partition" id="apidoc.element.underscore.partition">
+        function <span class="apidocSignatureSpan">underscore.</span>partition
+        <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">partition = function (obj, predicate, context) {
+  predicate = cb(predicate, context);
+  var pass = [], fail = [];
+  _.each(obj, function(value, key, obj) {
+    (predicate(value, key, obj) ? pass : fail).push(value);
+  });
+  return [pass, fail];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.pick" id="apidoc.element.underscore.pick">
+        function <span class="apidocSignatureSpan">underscore.</span>pick
+        <span class="apidocSignatureSpan">(object, oiteratee, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pick = function (object, oiteratee, context) {
+  var result = {}, obj = object, iteratee, keys;
+  if (obj == null) return result;
+  if (_.isFunction(oiteratee)) {
+    keys = _.allKeys(obj);
+    iteratee = optimizeCb(oiteratee, context);
+  } else {
+    keys = flatten(arguments, false, false, 1);
+    iteratee = function(value, key, obj) { return key in obj; };
+    obj = Object(obj);
+  }
+  for (var i = 0, length = keys.length; i &#x3c; length; i++) {
+    var key = keys[i];
+    var value = obj[key];
+    if (iteratee(value, key, obj)) result[key] = value;
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.pluck" id="apidoc.element.underscore.pluck">
+        function <span class="apidocSignatureSpan">underscore.</span>pluck
+        <span class="apidocSignatureSpan">(obj, key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pluck = function (obj, key) {
+  return _.map(obj, _.property(key));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.property" id="apidoc.element.underscore.property">
+        function <span class="apidocSignatureSpan">underscore.</span>property
+        <span class="apidocSignatureSpan">(key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">property = function (key) {
+  return function(obj) {
+    return obj == null ? void 0 : obj[key];
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.propertyOf" id="apidoc.element.underscore.propertyOf">
+        function <span class="apidocSignatureSpan">underscore.</span>propertyOf
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propertyOf = function (obj) {
+  return obj == null ? function(){} : function(key) {
+    return obj[key];
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.random" id="apidoc.element.underscore.random">
+        function <span class="apidocSignatureSpan">underscore.</span>random
+        <span class="apidocSignatureSpan">(min, max)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">random = function (min, max) {
+  if (max == null) {
+    max = min;
+    min = 0;
+  }
+  return min + Math.floor(Math.random() * (max - min + 1));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.range" id="apidoc.element.underscore.range">
+        function <span class="apidocSignatureSpan">underscore.</span>range
+        <span class="apidocSignatureSpan">(start, stop, step)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">range = function (start, stop, step) {
+  if (stop == null) {
+    stop = start || 0;
+    start = 0;
+  }
+  step = step || 1;
+
+  var length = Math.max(Math.ceil((stop - start) / step), 0);
+  var range = Array(length);
+
+  for (var idx = 0; idx &#x3c; length; idx++, start += step) {
+    range[idx] = start;
+  }
+
+  return range;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.reduce" id="apidoc.element.underscore.reduce">
+        function <span class="apidocSignatureSpan">underscore.</span>reduce
+        <span class="apidocSignatureSpan">(obj, iteratee, memo, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">reduce = function (obj, iteratee, memo, context) {
+  iteratee = optimizeCb(iteratee, context, 4);
+  var keys = !isArrayLike(obj) &#x26;&#x26; _.keys(obj),
+      length = (keys || obj).length,
+      index = dir &#x3e; 0 ? 0 : length - 1;
+  // Determine the initial value if none is provided.
+  if (arguments.length &#x3c; 3) {
+    memo = obj[keys ? keys[index] : index];
+    index += dir;
+  }
+  return iterator(obj, iteratee, memo, keys, index, length);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.reduceRight" id="apidoc.element.underscore.reduceRight">
+        function <span class="apidocSignatureSpan">underscore.</span>reduceRight
+        <span class="apidocSignatureSpan">(obj, iteratee, memo, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">reduceRight = function (obj, iteratee, memo, context) {
+  iteratee = optimizeCb(iteratee, context, 4);
+  var keys = !isArrayLike(obj) &#x26;&#x26; _.keys(obj),
+      length = (keys || obj).length,
+      index = dir &#x3e; 0 ? 0 : length - 1;
+  // Determine the initial value if none is provided.
+  if (arguments.length &#x3c; 3) {
+    memo = obj[keys ? keys[index] : index];
+    index += dir;
+  }
+  return iterator(obj, iteratee, memo, keys, index, length);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.reject" id="apidoc.element.underscore.reject">
+        function <span class="apidocSignatureSpan">underscore.</span>reject
+        <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">reject = function (obj, predicate, context) {
+  return _.filter(obj, _.negate(cb(predicate)), context);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.rest" id="apidoc.element.underscore.rest">
+        function <span class="apidocSignatureSpan">underscore.</span>rest
+        <span class="apidocSignatureSpan">(array, n, guard)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">rest = function (array, n, guard) {
+  return slice.call(array, n == null || guard ? 1 : n);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.result" id="apidoc.element.underscore.result">
+        function <span class="apidocSignatureSpan">underscore.</span>result
+        <span class="apidocSignatureSpan">(object, property, fallback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">result = function (object, property, fallback) {
+  var value = object == null ? void 0 : object[property];
+  if (value === void 0) {
+    value = fallback;
+  }
+  return _.isFunction(value) ? value.call(object) : value;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.sample" id="apidoc.element.underscore.sample">
+        function <span class="apidocSignatureSpan">underscore.</span>sample
+        <span class="apidocSignatureSpan">(obj, n, guard)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sample = function (obj, n, guard) {
+  if (n == null || guard) {
+    if (!isArrayLike(obj)) obj = _.values(obj);
+    return obj[_.random(obj.length - 1)];
+  }
+  return _.shuffle(obj).slice(0, Math.max(0, n));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.select" id="apidoc.element.underscore.select">
+        function <span class="apidocSignatureSpan">underscore.</span>select
+        <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">select = function (obj, predicate, context) {
+  var results = [];
+  predicate = cb(predicate, context);
+  _.each(obj, function(value, index, list) {
+    if (predicate(value, index, list)) results.push(value);
+  });
+  return results;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.shuffle" id="apidoc.element.underscore.shuffle">
+        function <span class="apidocSignatureSpan">underscore.</span>shuffle
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">shuffle = function (obj) {
+  var set = isArrayLike(obj) ? obj : _.values(obj);
+  var length = set.length;
+  var shuffled = Array(length);
+  for (var index = 0, rand; index &#x3c; length; index++) {
+    rand = _.random(0, index);
+    if (rand !== index) shuffled[index] = shuffled[rand];
+    shuffled[rand] = set[index];
+  }
+  return shuffled;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.size" id="apidoc.element.underscore.size">
+        function <span class="apidocSignatureSpan">underscore.</span>size
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">size = function (obj) {
+  if (obj == null) return 0;
+  return isArrayLike(obj) ? obj.length : _.keys(obj).length;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.some" id="apidoc.element.underscore.some">
+        function <span class="apidocSignatureSpan">underscore.</span>some
+        <span class="apidocSignatureSpan">(obj, predicate, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">some = function (obj, predicate, context) {
+  predicate = cb(predicate, context);
+  var keys = !isArrayLike(obj) &#x26;&#x26; _.keys(obj),
+      length = (keys || obj).length;
+  for (var index = 0; index &#x3c; length; index++) {
+    var currentKey = keys ? keys[index] : index;
+    if (predicate(obj[currentKey], currentKey, obj)) return true;
+  }
+  return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.sortBy" id="apidoc.element.underscore.sortBy">
+        function <span class="apidocSignatureSpan">underscore.</span>sortBy
+        <span class="apidocSignatureSpan">(obj, iteratee, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sortBy = function (obj, iteratee, context) {
+  iteratee = cb(iteratee, context);
+  return _.pluck(_.map(obj, function(value, index, list) {
+    return {
+      value: value,
+      index: index,
+      criteria: iteratee(value, index, list)
+    };
+  }).sort(function(left, right) {
+    var a = left.criteria;
+    var b = right.criteria;
+    if (a !== b) {
+      if (a &#x3e; b || a === void 0) return 1;
+      if (a &#x3c; b || b === void 0) return -1;
+    }
+    return left.index - right.index;
+  }), &#x27;value&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.sortedIndex" id="apidoc.element.underscore.sortedIndex">
+        function <span class="apidocSignatureSpan">underscore.</span>sortedIndex
+        <span class="apidocSignatureSpan">(array, obj, iteratee, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sortedIndex = function (array, obj, iteratee, context) {
+  iteratee = cb(iteratee, context, 1);
+  var value = iteratee(obj);
+  var low = 0, high = getLength(array);
+  while (low &#x3c; high) {
+    var mid = Math.floor((low + high) / 2);
+    if (iteratee(array[mid]) &#x3c; value) low = mid + 1; else high = mid;
+  }
+  return low;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.tail" id="apidoc.element.underscore.tail">
+        function <span class="apidocSignatureSpan">underscore.</span>tail
+        <span class="apidocSignatureSpan">(array, n, guard)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tail = function (array, n, guard) {
+  return slice.call(array, n == null || guard ? 1 : n);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.take" id="apidoc.element.underscore.take">
+        function <span class="apidocSignatureSpan">underscore.</span>take
+        <span class="apidocSignatureSpan">(array, n, guard)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">take = function (array, n, guard) {
+  if (array == null) return void 0;
+  if (n == null || guard) return array[0];
+  return _.initial(array, array.length - n);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.tap" id="apidoc.element.underscore.tap">
+        function <span class="apidocSignatureSpan">underscore.</span>tap
+        <span class="apidocSignatureSpan">(obj, interceptor)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tap = function (obj, interceptor) {
+  interceptor(obj);
+  return obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.template" id="apidoc.element.underscore.template">
+        function <span class="apidocSignatureSpan">underscore.</span>template
+        <span class="apidocSignatureSpan">(text, settings, oldSettings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">template = function (text, settings, oldSettings) {
+  if (!settings &#x26;&#x26; oldSettings) settings = oldSettings;
+  settings = _.defaults({}, settings, _.templateSettings);
+
+  // Combine delimiters into one regular expression via alternation.
+  var matcher = RegExp([
+    (settings.escape || noMatch).source,
+    (settings.interpolate || noMatch).source,
+    (settings.evaluate || noMatch).source
+  ].join(&#x27;|&#x27;) + &#x27;|$&#x27;, &#x27;g&#x27;);
+
+  // Compile the template source, escaping string literals appropriately.
+  var index = 0;
+  var source = &#x22;__p+=&#x27;&#x22;;
+  text.replace(matcher, function(match, escape, interpolate, evaluate, offset) {
+    source += text.slice(index, offset).replace(escaper, escapeChar);
+    index = offset + match.length;
+
+    if (escape) {
+      source += &#x22;&#x27;+\n((__t=(&#x22; + escape + &#x22;))==null?&#x27;&#x27;:_.escape(__t))+\n&#x27;&#x22;;
+    } else if (interpolate) {
+      source += &#x22;&#x27;+\n((__t=(&#x22; + interpolate + &#x22;))==null?&#x27;&#x27;:__t)+\n&#x27;&#x22;;
+    } else if (evaluate) {
+      source += &#x22;&#x27;;\n&#x22; + evaluate + &#x22;\n__p+=&#x27;&#x22;;
+    }
+
+    // Adobe VMs need the match returned to produce the correct offest.
+    return match;
+  });
+  source += &#x22;&#x27;;\n&#x22;;
+
+  // If a variable is not specified, place data values in local scope.
+  if (!settings.variable) source = &#x27;with(obj||{}){\n&#x27; + source + &#x27;}\n&#x27;;
+
+  source = &#x22;var __t,__p=&#x27;&#x27;,__j=Array.prototype.join,&#x22; +
+    &#x22;print=function(){__p+=__j.call(arguments,&#x27;&#x27;);};\n&#x22; +
+    source + &#x27;return __p;\n&#x27;;
+
+  try {
+    var render = new Function(settings.variable || &#x27;obj&#x27;, &#x27;_&#x27;, source);
+  } catch (e) {
+    e.source = source;
+    throw e;
+  }
+
+  var template = function(data) {
+    return render.call(this, data, _);
+  };
+
+  // Provide the compiled source as a convenience for precompilation.
+  var argument = settings.variable || &#x27;obj&#x27;;
+  template.source = &#x27;function(&#x27; + argument + &#x27;){\n&#x27; + source + &#x27;}&#x27;;
+
+  return template;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.throttle" id="apidoc.element.underscore.throttle">
+        function <span class="apidocSignatureSpan">underscore.</span>throttle
+        <span class="apidocSignatureSpan">(func, wait, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">throttle = function (func, wait, options) {
+  var context, args, result;
+  var timeout = null;
+  var previous = 0;
+  if (!options) options = {};
+  var later = function() {
+    previous = options.leading === false ? 0 : _.now();
+    timeout = null;
+    result = func.apply(context, args);
+    if (!timeout) context = args = null;
+  };
+  return function() {
+    var now = _.now();
+    if (!previous &#x26;&#x26; options.leading === false) previous = now;
+    var remaining = wait - (now - previous);
+    context = this;
+    args = arguments;
+    if (remaining &#x3c;= 0 || remaining &#x3e; wait) {
+      if (timeout) {
+        clearTimeout(timeout);
+        timeout = null;
+      }
+      previous = now;
+      result = func.apply(context, args);
+      if (!timeout) context = args = null;
+    } else if (!timeout &#x26;&#x26; options.trailing !== false) {
+      timeout = setTimeout(later, remaining);
+    }
+    return result;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.times" id="apidoc.element.underscore.times">
+        function <span class="apidocSignatureSpan">underscore.</span>times
+        <span class="apidocSignatureSpan">(n, iteratee, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">times = function (n, iteratee, context) {
+  var accum = Array(Math.max(0, n));
+  iteratee = optimizeCb(iteratee, context, 1);
+  for (var i = 0; i &#x3c; n; i++) accum[i] = iteratee(i);
+  return accum;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.toArray" id="apidoc.element.underscore.toArray">
+        function <span class="apidocSignatureSpan">underscore.</span>toArray
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toArray = function (obj) {
+  if (!obj) return [];
+  if (_.isArray(obj)) return slice.call(obj);
+  if (isArrayLike(obj)) return _.map(obj, _.identity);
+  return _.values(obj);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.unescape" id="apidoc.element.underscore.unescape">
+        function <span class="apidocSignatureSpan">underscore.</span>unescape
+        <span class="apidocSignatureSpan">(string)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unescape = function (string) {
+  string = string == null ? &#x27;&#x27; : &#x27;&#x27; + string;
+  return testRegexp.test(string) ? string.replace(replaceRegexp, escaper) : string;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.union" id="apidoc.element.underscore.union">
+        function <span class="apidocSignatureSpan">underscore.</span>union
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">union = function () {
+  return _.uniq(flatten(arguments, true, true));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.uniq" id="apidoc.element.underscore.uniq">
+        function <span class="apidocSignatureSpan">underscore.</span>uniq
+        <span class="apidocSignatureSpan">(array, isSorted, iteratee, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">uniq = function (array, isSorted, iteratee, context) {
+  if (!_.isBoolean(isSorted)) {
+    context = iteratee;
+    iteratee = isSorted;
+    isSorted = false;
+  }
+  if (iteratee != null) iteratee = cb(iteratee, context);
+  var result = [];
+  var seen = [];
+  for (var i = 0, length = getLength(array); i &#x3c; length; i++) {
+    var value = array[i],
+        computed = iteratee ? iteratee(value, i, array) : value;
+    if (isSorted) {
+      if (!i || seen !== computed) result.push(value);
+      seen = computed;
+    } else if (iteratee) {
+      if (!_.contains(seen, computed)) {
+        seen.push(computed);
+        result.push(value);
+      }
+    } else if (!_.contains(result, value)) {
+      result.push(value);
+    }
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.unique" id="apidoc.element.underscore.unique">
+        function <span class="apidocSignatureSpan">underscore.</span>unique
+        <span class="apidocSignatureSpan">(array, isSorted, iteratee, context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unique = function (array, isSorted, iteratee, context) {
+  if (!_.isBoolean(isSorted)) {
+    context = iteratee;
+    iteratee = isSorted;
+    isSorted = false;
+  }
+  if (iteratee != null) iteratee = cb(iteratee, context);
+  var result = [];
+  var seen = [];
+  for (var i = 0, length = getLength(array); i &#x3c; length; i++) {
+    var value = array[i],
+        computed = iteratee ? iteratee(value, i, array) : value;
+    if (isSorted) {
+      if (!i || seen !== computed) result.push(value);
+      seen = computed;
+    } else if (iteratee) {
+      if (!_.contains(seen, computed)) {
+        seen.push(computed);
+        result.push(value);
+      }
+    } else if (!_.contains(result, value)) {
+      result.push(value);
+    }
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.uniqueId" id="apidoc.element.underscore.uniqueId">
+        function <span class="apidocSignatureSpan">underscore.</span>uniqueId
+        <span class="apidocSignatureSpan">(prefix)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">uniqueId = function (prefix) {
+  var id = ++idCounter + &#x27;&#x27;;
+  return prefix ? prefix + id : id;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.unzip" id="apidoc.element.underscore.unzip">
+        function <span class="apidocSignatureSpan">underscore.</span>unzip
+        <span class="apidocSignatureSpan">(array)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unzip = function (array) {
+  var length = array &#x26;&#x26; _.max(array, getLength).length || 0;
+  var result = Array(length);
+
+  for (var index = 0; index &#x3c; length; index++) {
+    result[index] = _.pluck(array, index);
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.values" id="apidoc.element.underscore.values">
+        function <span class="apidocSignatureSpan">underscore.</span>values
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">values = function (obj) {
+  var keys = _.keys(obj);
+  var length = keys.length;
+  var values = Array(length);
+  for (var i = 0; i &#x3c; length; i++) {
+    values[i] = obj[keys[i]];
+  }
+  return values;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.where" id="apidoc.element.underscore.where">
+        function <span class="apidocSignatureSpan">underscore.</span>where
+        <span class="apidocSignatureSpan">(obj, attrs)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">where = function (obj, attrs) {
+  return _.filter(obj, _.matcher(attrs));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.without" id="apidoc.element.underscore.without">
+        function <span class="apidocSignatureSpan">underscore.</span>without
+        <span class="apidocSignatureSpan">(array)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">without = function (array) {
+  return _.difference(array, slice.call(arguments, 1));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.wrap" id="apidoc.element.underscore.wrap">
+        function <span class="apidocSignatureSpan">underscore.</span>wrap
+        <span class="apidocSignatureSpan">(func, wrapper)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">wrap = function (func, wrapper) {
+  return _.partial(wrapper, func);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    <h2>
+        <a href="#apidoc.element.underscore.zip" id="apidoc.element.underscore.zip">
+        function <span class="apidocSignatureSpan">underscore.</span>zip
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">zip = function () {
+  return _.unzip(arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+    
+    
+    
+    
+    
+    
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
